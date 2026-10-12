@@ -1,0 +1,35 @@
+if ( Date_Range != null )
+{
+	if (Date_Range == "Last 30 Days")
+	{
+		//calculates the date 30 days ago 
+		start_date = zoho.currentdate.subDay(30);
+	
+		//gets matching  invoice ids from the last 30 days
+	    matching_ids = Invoices[Invoice_Date >= start_date].ID.getAll();
+	
+		//shows the searches in the search_invoice lookup box 
+	    Search_Invoices:ui.add(matching_ids);
+	}
+	else if (Date_Range == "Last 90 Days")
+	{
+		//calculates the date 90 days ago
+		start_date = zoho.currentdate.subDay(90);
+		
+		//gets matching invoice ids from 90 days ago 
+		matching_ids = Invoices[Invoice_Date >= start_date].IDgetALL();
+		
+		//shows matching searches in the lookup box 
+		Search_Invoices:ui.add(matching_ids);
+	}
+}
+else
+{
+	//removes all options from the lookup box view 
+	Search_Invoices:ui.add(list());
+	
+	//clears any record currently selected in the field 
+	clear Search_Invoices;
+}
+
+// this code will not work becasue I have inserted balnk variables like Invoice_Date 
