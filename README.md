@@ -14,7 +14,7 @@ Murphy-wall-shipping/
 │
 ├── README.md
 └── src/
-    ├── Home/           # Startup of application, all sub-tabs located here
+    ├── Home           # Startup of application, all sub-tabs located here
     ├── Products/       # Product information and log
     ├── Invoices/       # All invoices and create invoice option
     ├── Shipments/      # All shipments and create shipments
