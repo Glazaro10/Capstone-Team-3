@@ -1,1 +1,102 @@
+## Logo 
+<panel elementName='Panel 4'>
+  <pr width='fill' height='fill'>
+    <pc padding='20px' bgColor='#CFBFFD' action='OpenPage' componentLinkName='Home' target='same-window' width='100%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc>
+          <image marginLeft='0px' marginRight='10px' marginBottom='0px' marginTop='0px' borderColor='#2D2D2D' borderWidth='0px' color='#2D2D2D' bgColor='transparent' bgColorType='noFill' width='80px' height='80px' type='gallery' value='Murco_Logo.png' cornerRadius='0px' imagePosition='fill' /> </pc>
+        <pc>
+          <text margin='0px' padding='0px' color='#000000' size='33px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Murco Wall Products'> </text>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
 
+## Home Tab
+
+<panel elementName='Panel'>
+  <pr width='fill' height='fill'>
+    <pc padding='20px' bgColor='#CFBFFD' action='OpenPage' componentLinkName='Home' target='same-window' width='100%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc>
+          <pr>
+            <pc>
+              <image marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='0px' borderColor='#2D2D2D' borderWidth='0px' color='#2D2D2D' bgColor='transparent' bgColorType='noFill' width='80px' height='80px' type='icon' value='nature-dog-house' size='33px' cornerRadius='10px' iconType='outline' /> </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text action='OpenPage' componentLinkName='Home' target='same-window' margin='0px' padding='0px' color='#000000' size='33px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Home'> </text>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
+
+
+## Products Tab
+
+<panel elementName='Panel 1'>
+  <pr width='fill' height='fill'>
+    <pc padding='20px' bgColor='#CFBFFD' action='OpenReport' componentLinkName='Products_Log_Report' target='same-window' width='100%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc>
+          <pr>
+            <pc>
+              <image marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='0px' borderColor='#2D2D2D' borderWidth='0px' color='#2D2D2D' bgColor='transparent' bgColorType='noFill' width='52px' height='52px' type='icon' value='shopping-cart-modern-add' size='36px' cornerRadius='0px' iconType='outline' /> </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text action='OpenReport' componentLinkName='Products_Log_Report' target='same-window' margin='0px' padding='0px' color='#000000' size='33px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Products'> </text>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
+
+## Shipment Tab
+
+<panel elementName='Panel 2'>
+  <pr width='fill' height='fill'>
+    <pc padding='20px' bgColor='#CFBFFD' action='OpenPage' componentLinkName='Shipments1' target='same-window' width='100%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc>
+          <pr>
+            <pc>
+              <image marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='0px' borderColor='#2D2D2D' borderWidth='0px' color='#2D2D2D' bgColor='transparent' bgColorType='noFill' width='52px' height='52px' type='icon' value='objects-spaceship' size='33px' cornerRadius='0px' iconType='outline' /> </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text action='OpenPage' componentLinkName='Shipments1' target='same-window' margin='0px' padding='0px' color='#000000' size='33px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Shipments'> </text>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
+
+## Invoices Tab
+
+<panel elementName='Panel 3'>
+  <pr width='fill' height='fill'>
+    <pc padding='20px' bgColor='#CFBFFD' action='OpenReport' componentLinkName='All_Invoices' target='same-window' width='100%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc>
+          <pr>
+            <pc>
+              <image marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='0px' borderColor='#2D2D2D' borderWidth='0px' color='#2D2D2D' bgColor='transparent' bgColorType='noFill' width='52px' height='52px' type='icon' value='design-paper-design' size='33px' cornerRadius='0px' iconType='outline' /> </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text action='OpenReport' componentLinkName='All_Invoices' target='same-window' margin='0px' padding='0px' color='#000000' size='33px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Invoices'> </text>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
