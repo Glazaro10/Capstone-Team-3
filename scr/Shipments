@@ -1,1 +1,57 @@
+//Shipment Menu Buttons-
+//Create Shipment Button leading to form.
+<panel elementName='Panel 3'>
+  <pr width='auto'>
+    <pc padding='20px' bgColor='#DADADA' width='60%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc padding='5px' vAlign='middle'>
+          <pr>
+            <pc>
+              <text margin='0px' padding='0px' color='theme' size='24px' bold='true' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#5051F9' borderWidth='0px' value='Create Shipment'> </text>
+            </pc>
+          </pr>
+          <pr>
+            <pc>
+              <text marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='10px' padding='0px' color='#000000' size='16px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Start a new shipment by entering the details, adding products, and assigning a delivery method.'> </text>
+            </pc>
+          </pr>
+          <pr>
+            <pc>
+              <button margin='0px' paddingTop='12px' paddingLeft='15px' paddingRight='15px' paddingBottom='12px' action='OpenForm' componentLinkName='Shipments' target='same-window' color='#FFFFFF' size='16px' borderColor='#FFFFFF' borderWidth='0px' text='Create Shipment' bgColor='#5051F9' cornerRadius='6px' /> </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
 
+
+//View Shipment Button
+<panel elementName='Panel 4'>
+  <pr width='auto' height='fill'>
+    <pc padding='20px' bgColor='#DADADA' width='60%' hAlign='center' vAlign='middle'>
+      <pr width='auto' height='auto'>
+        <pc padding='5px' vAlign='middle'>
+          <pr>
+            <pc>
+              <text margin='0px' padding='0px' color='theme' size='24px' bold='true' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#5051F9' borderWidth='0px' value='View All Shipments'> </text>
+            </pc>
+          </pr>
+          <pr>
+            <pc>
+              <pr>
+                <pc>
+                  <text marginLeft='0px' marginRight='0px' marginBottom='10px' marginTop='10px' padding='0px' color='#000000' size='16px' type='Text' bgColor='transparent' bgColorType='noFill' cornerRadius='0px' borderColor='#000000' borderWidth='0px' value='Search, filter, and manage your existing shipments. Track status, view details, and more.'> </text>
+                </pc>
+              </pr>
+              <pr>
+                <pc>
+                  <button margin='0px' paddingTop='12px' paddingLeft='15px' paddingRight='15px' paddingBottom='12px' action='OpenReport' componentLinkName='All_Shipments' target='same-window' color='#FFFFFF' size='16px' borderColor='#000000' borderWidth='0px' text='View Shipments' bgColor='theme' cornerRadius='3px' /> </pc>
+              </pr>
+            </pc>
+          </pr>
+        </pc>
+      </pr>
+    </pc>
+  </pr>
+</panel>
