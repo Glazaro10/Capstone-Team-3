@@ -55,3 +55,129 @@
     </pc>
   </pr>
 </panel>
+
+//Test Validation on order form submission
+// Validate Shipment ID
+if(input.Shipment_ID.isNull())
+{
+	alert "Shipment ID is required";
+	cancel submit;
+}
+// Validate Origin_Location1 field
+if(input.Origin_Location1.isNull())
+{
+	alert "Origin Location is required";
+	cancel submit;
+}
+//else
+//{
+//	if(input.Origin_Location1 == input.Store_Locations)
+//	{
+//	alert "Origin and Destination cannot be the same.";
+//	cancel submit;
+//	}
+//}
+// Validate Pickup_Date field
+if(input.Pickup_Date.isNull())
+{
+	alert "Pickup Date is required";
+	cancel submit;
+}
+else
+{
+	if(input.Pickup_Date < today)
+	{
+		alert(Pickup_Date,"Pickup Date cannot be a previous date.");
+		cancel submit;
+	}
+}
+// Validate Carrier field
+if(input.Carrier.isNull())
+{
+	alert "Carrier is required";
+	cancel submit;
+}
+// Validate Delivery_Date field
+if(input.Delivery_Date.isNull())
+{
+	alert "Delivery Date is required";
+	cancel submit;
+}
+else
+{
+	if(input.Delivery_Date < today)
+	{
+		alert(Delivery_Date,"Delivery Date cannot be a previous date.");
+		cancel submit;
+	}
+}
+// Validate Reference_PO_Number field
+if(input.Reference_PO_Number.isNull())
+{
+	alert "Reference PO Number is required";
+	cancel submit;
+}
+// Validate Picture_Submission field
+//if(input.Picture_Submission.isNull())
+//{
+//	alert "Picture Submission is required";
+//	cancel submit;
+//}
+
+// Invoice Creation from Create form screen
+// Fetch the current shipment record from input
+shipmentRecord = Shipments[ID == input.ID];
+// Create a map with fields to copy from Shipments to Invoice1
+invoiceData = Map();
+// Copy text fields
+if(input.Reference_PO_Number.isNull() == false)
+{
+	invoiceData.put("Reference_PO_Number",input.Reference_PO_Number);
+}
+if(input.Shipment_ID.isNull() == false)
+{
+	invoiceData.put("Shipment_ID",input.Shipment_ID);
+}
+// Copy date fields
+if(input.Delivery_Date.isNull() == false)
+{
+	invoiceData.put("Delivery_Date",input.Delivery_Date);
+}
+if(input.Pickup_Date.isNull() == false)
+{
+	invoiceData.put("Pickup_Date",input.Pickup_Date);
+}
+// Copy single_select fields
+if(input.Carrier.isNull() == false)
+{
+	invoiceData.put("Carrier",input.Carrier);
+}
+if(input.Origin_Location1.isNull() == false)
+{
+	invoiceData.put("Origin_Location1",input.Origin_Location1);
+}
+// Copy single_select_lookup fields
+if(input.Store_Locations.isNull() == false)
+{
+	invoiceData.put("Store_Locations",input.Store_Locations);
+}
+// Copy image field
+if(input.Picture_Submission.isNull() == false)
+{
+	invoiceData.put("Picture_Submission",input.Picture_Submission);
+}
+// Insert the record into Invoice1 form
+response = insert into Invoice1
+[
+	Reference_PO_Number=invoiceData.get("Reference_PO_Number")
+	Shipment_ID=invoiceData.get("Shipment_ID")
+	Delivery_Date=invoiceData.get("Delivery_Date")
+	Pickup_Date=invoiceData.get("Pickup_Date")
+	Carrier=invoiceData.get("Carrier")
+	Origin_Location1=invoiceData.get("Origin_Location1")
+	Store_Locations=invoiceData.get("Store_Locations")
+	Picture_Submission=invoiceData.get("Picture_Submission")
+	Added_User=zoho.loginuser
+];
+info "Invoice record created successfully with ID: " + response;
+
